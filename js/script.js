@@ -41,7 +41,6 @@ const app = new Vue(
                 if (this.currentSlide > this.thumbs.length - 1) {
                     this.currentSlide = 0;
                 }
-
                 console.log('next');
 
             },
@@ -51,6 +50,9 @@ const app = new Vue(
                     this.currentSlide = this.thumbs.length - 1;
                 }
                 console.log('prev');
+            },
+            clickImage(index) {
+                this.currentSlide = index;
             }
 
         }
